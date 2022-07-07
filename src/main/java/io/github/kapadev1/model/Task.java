@@ -7,6 +7,7 @@ import javax.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "tasks")
+public
 class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,7 +31,7 @@ class Task {
         return description;
     }
 
-    public void setDescription(String description) {
+    void setDescription(String description) {
         this.description = description;
     }
 
@@ -38,7 +39,7 @@ class Task {
         return done;
     }
 
-    public void setDone(boolean done) {
+    void setDone(boolean done) {
         this.done = done;
     }
 }
