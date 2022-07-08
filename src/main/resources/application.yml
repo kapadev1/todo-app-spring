@@ -4,6 +4,7 @@ spring:
         path: '/console'
     datasource:
       url: 'jdbc:h2:file:C:/Users/dtrza/Desktop/todo-app/todo-app/todo-db'
+      my.prop: 'test'
 
     jpa:
       hibernate:
