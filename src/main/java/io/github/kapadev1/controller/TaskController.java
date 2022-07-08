@@ -26,6 +26,7 @@ class TaskController {
         return ResponseEntity.ok(repository.findAll());
     }
 
+
     @GetMapping( "/tasks")
     ResponseEntity<List<Task>> readAllTasks(Pageable page) {
         logger.info("Custom pageable");
@@ -39,6 +40,7 @@ class TaskController {
                 .map(task -> ResponseEntity.ok(task))
                 .orElse(ResponseEntity.notFound().build());
     }
+
 
     @PostMapping("/tasks")
     ResponseEntity<Task> creatTask(@RequestBody @Valid Task toCreat){
