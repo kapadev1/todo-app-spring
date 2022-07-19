@@ -34,7 +34,7 @@ class TaskController {
     @GetMapping("/tasks/{id}")
     ResponseEntity<?> readTask(@PathVariable int id){
         return repository.findById(id)
-                .map(task -> ResponseEntity.ok(task))
+                .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
     @PostMapping("/tasks")
@@ -47,8 +47,11 @@ class TaskController {
         if(!repository.existsById(id)){
             return ResponseEntity.notFound().build();
         }
-        toUpdate.setId(id);
-        repository.save(toUpdate);
+        repository.findById(id)
+                .ifPresent(task -> {
+                        task.updateFrom(toUpdate);
+                        repository.save(task);
+                });
         return ResponseEntity.noContent().build();
     }
     @Transactional
