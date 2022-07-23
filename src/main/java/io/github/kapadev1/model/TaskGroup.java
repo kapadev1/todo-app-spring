@@ -12,7 +12,7 @@ import java.util.Set;
 @Table(name = "task_groups")
 public class TaskGroup {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     @NotBlank(message = "Task group's description must not be empty")
     private String description;
@@ -54,7 +54,7 @@ public class TaskGroup {
         return tasks;
     }
 
-    void setTasks(final Set<Task> tasks) {
+     public void setTasks(final Set<Task> tasks) {
         this.tasks = tasks;
     }
 
