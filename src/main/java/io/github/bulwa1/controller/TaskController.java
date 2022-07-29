@@ -1,6 +1,6 @@
-package io.github.kapadev1.controller;
-import io.github.kapadev1.model.Task;
-import io.github.kapadev1.model.TaskRepository;
+package io.github.bulwa1.controller;
+import io.github.bulwa1.model.Task;
+import io.github.bulwa1.model.TaskRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;

@@ -1,15 +1,11 @@
-package io.github.kapadev1.logic;
+package io.github.bulwa1.logic;
 
-import io.github.kapadev1.TaskConfigurationProperties;
-import io.github.kapadev1.model.TaskGroup;
-import io.github.kapadev1.model.TaskGroupRepository;
-import io.github.kapadev1.model.TaskRepository;
-import io.github.kapadev1.model.projection.GroupReadModel;
-import io.github.kapadev1.model.projection.GroupWriteModel;
-import org.springframework.beans.factory.config.ConfigurableBeanFactory;
-import org.springframework.context.annotation.Scope;
+import io.github.bulwa1.model.TaskGroup;
+import io.github.bulwa1.model.TaskGroupRepository;
+import io.github.bulwa1.model.TaskRepository;
+import io.github.bulwa1.model.projection.GroupReadModel;
+import io.github.bulwa1.model.projection.GroupWriteModel;
 import org.springframework.stereotype.Service;
-import org.springframework.web.context.annotation.RequestScope;
 
 import java.util.List;
 import java.util.stream.Collectors;

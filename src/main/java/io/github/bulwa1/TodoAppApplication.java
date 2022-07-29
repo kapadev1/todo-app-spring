@@ -1,4 +1,4 @@
-package io.github.kapadev1;
+package io.github.bulwa1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

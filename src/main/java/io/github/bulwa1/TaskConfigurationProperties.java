@@ -1,4 +1,4 @@
-package io.github.kapadev1;
+package io.github.bulwa1;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;

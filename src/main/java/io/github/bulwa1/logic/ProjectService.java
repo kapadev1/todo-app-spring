@@ -1,8 +1,8 @@
-package io.github.kapadev1.logic;
+package io.github.bulwa1.logic;
 
-import io.github.kapadev1.TaskConfigurationProperties;
-import io.github.kapadev1.model.*;
-import io.github.kapadev1.model.projection.GroupReadModel;
+import io.github.bulwa1.TaskConfigurationProperties;
+import io.github.bulwa1.model.*;
+import io.github.bulwa1.model.projection.GroupReadModel;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;

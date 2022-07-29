@@ -1,4 +1,4 @@
-package io.github.kapadev1.model;
+package io.github.bulwa1.model;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,10 +1,9 @@
-package io.github.kapadev1.model.projection;
+package io.github.bulwa1.model.projection;
 
-import io.github.kapadev1.model.Task;
-import io.github.kapadev1.model.TaskGroup;
+import io.github.bulwa1.model.Task;
+import io.github.bulwa1.model.TaskGroup;
 
 import java.time.LocalDateTime;
-import java.util.Comparator;
 import java.util.Set;
 import java.util.stream.Collectors;
 

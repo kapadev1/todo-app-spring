@@ -1,6 +1,6 @@
-package io.github.kapadev1.controller;
+package io.github.bulwa1.controller;
 
-import io.github.kapadev1.TaskConfigurationProperties;
+import io.github.bulwa1.TaskConfigurationProperties;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

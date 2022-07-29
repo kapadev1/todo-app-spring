@@ -1,6 +1,6 @@
-package io.github.kapadev1.adapter;
-import io.github.kapadev1.model.Task;
-import io.github.kapadev1.model.TaskRepository;
+package io.github.bulwa1.adapter;
+import io.github.bulwa1.model.Task;
+import io.github.bulwa1.model.TaskRepository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

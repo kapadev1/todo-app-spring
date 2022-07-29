@@ -1,20 +1,28 @@
-package io.github.kapadev1.model;
+package io.github.bulwa1.model;
+
+
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.util.Set;
 
 @Entity
-@Table(name = "project_steps")
-public class ProjectStep {
+@Table(name = "task_groups")
+public class TaskGroup {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @NotBlank(message = "Project step's description must not be empty")
+    @NotBlank(message = "Task group's description must not be empty")
     private String description;
-    private int daysToDeadline;
+    private boolean done;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "group")
+    private Set<Task> tasks;
     @ManyToOne
     @JoinColumn(name = "project_id")
     private Project project;
+
+    public TaskGroup() {
+    }
 
     public int getId() {
         return id;
@@ -28,16 +36,24 @@ public class ProjectStep {
         return description;
     }
 
-    void setDescription(final String description) {
+    public void setDescription(final String description) {
         this.description = description;
     }
 
-    public int getDaysToDeadline() {
-        return daysToDeadline;
+    public boolean isDone() {
+        return done;
     }
 
-    void setDaysToDeadline(final int daysToDeadline) {
-        this.daysToDeadline = daysToDeadline;
+    public void setDone(boolean done) {
+        this.done = done;
+    }
+
+    public Set<Task> getTasks() {
+        return tasks;
+    }
+
+    public void setTasks(final Set<Task> tasks) {
+        this.tasks = tasks;
     }
 
     Project getProject() {
@@ -48,3 +64,4 @@ public class ProjectStep {
         this.project = project;
     }
 }
+
